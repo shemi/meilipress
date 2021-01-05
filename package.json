@@ -1,0 +1,31 @@
+{
+  "name": "meilipress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "laravel-mix": "^5.0.4",
+    "less-loader": "^6.2.0",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "tippy.js": "^6.2.7",
+    "underscore": "^1.10.2",
+    "uuid": "^8.3.0",
+    "vue": "^2.6.11",
+    "vue-select": "^3.10.8",
+    "vue-wp-list-table": "^1.2.0",
+    "vuelidate": "^0.7.5"
+  }
+}

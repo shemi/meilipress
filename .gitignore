@@ -1,0 +1,9 @@
+# NPM
+/node_modules
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
+robots.txt

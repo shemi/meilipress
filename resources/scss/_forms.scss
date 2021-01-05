@@ -1,0 +1,46 @@
+.regular-text {
+  width: 25em;
+  font-size: 14px;
+}
+
+.v-select {
+
+  .vs__dropdown-toggle {
+    padding: 0 0 3px 0;
+    border: 1px solid #7e8993;
+    border-radius: 4px;
+    box-shadow: 0 0 0 transparent;
+    background-color: #fff;
+    color: #32373c;
+  }
+
+  .vs__search {
+    min-height: 0;
+  }
+}
+
+.submit-row {
+  padding: 20px 0 20px 0;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+
+  &.inline {
+    &:before {
+      content: "";
+      width: 200px;
+    }
+  }
+
+}
+
+.mp-message-tooltip {
+  position: absolute;
+  width: 150px;
+  background-color: #f1f1f1;
+  border: 1px solid #7e8993;
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 100;
+  margin: 0;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "shemi/meilipress",
+  "version": "1.0.0",
+  "type": "wordpress-plugin",
+  "description": "MeiliSearch for wordpress",
+  "keywords": ["wordpress", "meilisearch"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Shemi",
+      "email": "shemi.perez@gmail.com",
+      "homepage": "https://github.com/shemi"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "illuminate/support": "5.6.*",
+    "meilisearch/meilisearch-php": "^0.15.1",
+    "http-interop/http-factory-guzzle": "^1.0",
+    "php-http/curl-client": "^2.2",
+    "nyholm/psr7": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Shemi\\Core\\": "core/",
+      "Shemi\\MeiliPress\\": "plugin/"
+    }
+  },
+  "scripts": {
+
+  }
+}

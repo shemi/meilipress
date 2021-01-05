@@ -1,0 +1,11 @@
+.mp-index-view {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  grid-gap: 20px;
+  padding-top: 10px;
+
+  .mp-index-fields-add {
+    margin-top: 8px;
+  }
+
+}

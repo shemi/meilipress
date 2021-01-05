@@ -1,0 +1,32 @@
+<?php
+
+return [
+	"Relation" => __("Relation", MP_TD),
+	"The MySQL keyword used to join the clauses of the query." => __("The MySQL keyword used to join the clauses of the query.", MP_TD),
+	"Before Date" => __("Before Date", MP_TD),
+	"After Date" => __("After Date", MP_TD),
+	"Inclusive" => __("Inclusive", MP_TD),
+	"Yes (default)" => __("Yes (default)", MP_TD),
+	"No" => __("No", MP_TD),
+	"AND (default)" => __("AND (default)", MP_TD),
+	"OR" => __("OR", MP_TD),
+	"Add Query" => __("Add Query", MP_TD),
+	"Textual date/time description." => sprintf(__('<a href="%1$s" target="_blank">Textual date/time</a> description.', MP_TD), "https://www.php.net/manual/en/function.strtotime.php#refsect1-function.strtotime-examples"),
+	"Include results from dates specified, or not." => __("Include results from dates specified, or not.", MP_TD),
+	"Posts column to query against. Default: ‘post_date’." => __("Posts column to query against. Default: ‘post_date’.", MP_TD),
+	"Column" => __("Column", MP_TD),
+	"(default)" => __("(default)", MP_TD),
+	"Taxonomy" => __("Taxonomy", MP_TD),
+	"Taxonomy being queried (e.g. category, post_format, movie)." => __("Taxonomy being queried (e.g. category, post_format, product_cat).", MP_TD),
+	"Terms" => __("Terms", MP_TD),
+	"Term or terms to filter by. Single string or comma-separated." => __("Term or terms to filter by. Single string or comma-separated.", MP_TD),
+	"Field" => __("Field", MP_TD),
+	"The field to match terms against." => __("The field to match terms against.", MP_TD),
+	"MySQL operator used with terms in the WHERE clause" => __("MySQL operator used with terms in the WHERE clause", MP_TD),
+	"Operator" => __("Operator", MP_TD),
+	"Include Children" => __("Include Children", MP_TD),
+	"Whether to include child terms, or not." => __("Whether to include child terms, or not.", MP_TD),
+	"Taxonomy Query" => __("Taxonomy Query", MP_TD),
+	"index_sync_state_enabled" => __("Sync Active", MP_TD),
+	"index_sync_state_disabled" => __("Sync Disabled", MP_TD)
+];

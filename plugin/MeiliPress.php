@@ -142,6 +142,7 @@ class MeiliPress extends Plugin
 		}
 
 		$name = $index->nameWithPrefix();
+		$url = $this->settings('instance.url');
 		$enabled = true;
 		$message = "";
 		$publicKey = "";
@@ -157,6 +158,7 @@ class MeiliPress extends Plugin
 		return [
 			'name' => $name,
 			'key' => $publicKey,
+			'url' => $url,
 			'enabled' => $enabled,
 			'message' => $message
 		];

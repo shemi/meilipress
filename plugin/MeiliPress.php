@@ -133,4 +133,33 @@ class MeiliPress extends Plugin
 		]);
 	}
 
+	public function indexPublicSearchSettings($indexName)
+	{
+		$index = Index::findByName($indexName);
+
+		if(! $index) {
+			throw new \Exception(sprintf(__('Index with the name "%1$s" not exists.', MP_TD), $indexName));
+		}
+
+		$name = $index->nameWithPrefix();
+		$enabled = true;
+		$message = "";
+		$publicKey = "";
+
+		try {
+			$keys = $this->client()->getKeys();
+			$publicKey = $keys['public'];
+		} catch (\Exception $exception) {
+			$enabled = false;
+			$message = sprintf(__('MeiliPress unable get public key (%1$s)', MP_TD), $exception->getMessage());
+		}
+
+		return [
+			'name' => $name,
+			'key' => $publicKey,
+			'enabled' => $enabled,
+			'message' => $message
+		];
+	}
+
 }

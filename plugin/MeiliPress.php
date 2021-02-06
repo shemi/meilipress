@@ -93,12 +93,18 @@ class MeiliPress extends Plugin
 			return true;
 		}
 
-		if(! $this->client()) {
+		try {
+            $client = $this->client();
+        } catch (\Exception $exception) {
+		    return false;
+        }
+
+		if(! $client) {
 			return true;
 		}
 
 		try {
-			$this->client()->health();
+            $client->health();
 		}
 
 		catch (\Exception $exception) {

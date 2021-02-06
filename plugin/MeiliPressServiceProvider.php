@@ -19,7 +19,7 @@ class MeiliPressServiceProvider extends ServiceProvider
 			$this->checkIfEnabled();
 		}
 
-		if (!$this->plugin->disabled()) {
+		if (! $this->plugin->disabled()) {
 			add_action('save_post', [$this, 'onPostSaved'], 10, 3);
 			add_action('delete_post', [$this, 'onPostDelete'], 10, 2);
 			add_action('saved_term', [$this, 'onTermChange'], 10, 3);
